@@ -120,10 +120,10 @@ const DashboardPage = () => {
                     : "You";
 
                 return (
-                  <li key={task.id} className={`p-4 border rounded-md flex justify-between items-center ${task.completed ? "bg-[#6BA368]/40" : "bg-white"}`}>
-                    <div>
+                  <li key={task.id} className={`p-4 border rounded-md flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between sm:items-center ${task.completed ? "bg-[#6BA368]/40" : "bg-white"}`}>
+                    <div className="space-y-3">
                       <h3 className="font-semibold text-lg text-[#6F4E37]">{task.title}</h3>
-                      <p>{task.description}</p>
+                      <p className="max-w-3/4">{task.description}</p>
                       <p><span className="font-bold">Deadline:</span> {task.deadline}</p>
                       {user.role === "admin" && <p><span className="font-bold">Assigned To:</span> {assignedUserName}</p>}
                       <p><span className="font-bold">Status:</span> {" "}{task.completed ? "Completed" : "Pending"}</p>

@@ -15,7 +15,7 @@ const LoginPage = () => {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 bg-[#CBB092]">
       <main className="flex flex-col items-center justify-center row-start-2 text-center sm:items-start sm:text-left gap-8">
-        <div className="max-w-xl space-y-4 bg-[#F5F3F0] p-6 sm:p-8 text-center rounded-2xl shadow-lg">
+        <div className="max-w-xl sm:min-w-lg space-y-4 bg-[#F5F3F0] p-6 sm:p-8 text-center rounded-2xl shadow-lg">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#3E3E3E]">Login</h2>
           <LoginForm />
           <p className="text-sm text-[#6BA368] font-semibold">Don't have an account yet?</p>
